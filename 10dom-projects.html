@@ -4,6 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM-Projects</title>
+
+    <style>
+        .subscribe-btn {
+            border: none;
+          background-color: black;
+          color: white;
+          padding: 10px;
+          border-radius: 50px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+
+        .is-subscribed {
+          background-color: rgb(240, 240, 240);
+          color: black;
+        }
+    </style>
   </head>
   <body>
     <p>Youtube subscribe button</p>
@@ -11,7 +28,7 @@
       onclick="
        subscribe()
     "
-      class="js-subscribe-btn"
+      class="js-subscribe-btn subscribe-btn"
     >
       Subscribe
     </button>
@@ -66,8 +83,10 @@
 
         if (btnElement.innerText === "Subscribe") {
           btnElement.innerHTML = "Subscribed";
+          btnElement.classList.add('is-subscribed')
         } else {
           btnElement.innerHTML = "Subscribe";
+          btnElement.classList.remove('is-subscribed')
         }
       }
     </script>

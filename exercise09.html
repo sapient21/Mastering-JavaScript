@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-09</title>
+</head>
+<body>
+    <!-- <button>9a</button>
+    <button class="js-9b-btn">9b</button> -->
+
+    <hr>
+
+    <!-- <button onclick="
+        toss('heads')
+    " class="js-heads-btn">heads</button>
+
+    <button onclick="
+        toss('tails')
+    " class="js-tails-btn">tails</button>
+
+    <p class="text">Hello</p> -->
+
+    <hr>
+
+    <input type="text">
+    <button 
+    onclick="
+    writeMyName(event)
+    "
+    onkeydown="
+    keydown(event)
+    
+    "
+    
+    >Submit</button>
+
+    <p class="text">what's your name</p>
+
+    <script>
+        /*function toss (fate) {
+            if (fate === 'heads') {
+                document.querySelector('.text').innerText = 'you chose heads'
+            } else if (fate === 'tails') {
+                document.querySelector('.text').innerText = 'you chose tails'
+            }
+            console.log(document.querySelector('button'))
+    
+            document.querySelector('.js-9b-btn')
+                .innertext = '9b done!';
+        }*/
+
+
+        function writeMyName(event) {
+        let name = document.querySelector('input').value;
+        document.querySelector('.text').innerHTML = `your name is ${name}`
+        
+        function keydown(event){
+            if (event.key === 'Enter') {
+                writeMyName(event)
+            }
+        }
+        
+        } 
+        
+
+
+
+
+    </script>
+</body>
+</html>
