@@ -9,7 +9,7 @@ updateScoreElement();
 /*
 if (!score) {
   score = {
-    wins: 0,
+    wins: 0,,,
     losses: 0,
     ties: 0
   };
