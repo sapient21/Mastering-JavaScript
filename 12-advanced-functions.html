@@ -45,10 +45,20 @@
             'make dinner',
             'wash dish',
             'watch youtube'
-        ].forEach(function (value, index){
-            console.log(index)
+        ].forEach((value, index)  => {
+            if (value === 'wash dish') {
+                return;                
+            }
+
+            console.log(index);
             console.log(value);
         })
+
+        const arrow = () => {
+            console.log('hellow');
+        };
+
+        arrow();
     </script>
 </body>
 </html>
